@@ -12,9 +12,9 @@
         <support>
             <email><![CDATA[support@pcsg.de]]></email>
             <forum><![CDATA[https://community.quiqqer.com]]></forum>
-            <source><![CDATA[https://dev.quiqqer.com/quiqqer/erp]]></source>
-            <issues><![CDATA[https://dev.quiqqer.com/quiqqer/erp/issues]]></issues>
-            <wiki><![CDATA[https://dev.quiqqer.com/quiqqer/erp/wikis/home]]></wiki>
+            <source><![CDATA[https://dev.quiqqer.com/quiqqer/data-layer]]></source>
+            <issues><![CDATA[https://dev.quiqqer.com/quiqqer/data-layer/issues]]></issues>
+            <wiki><![CDATA[https://dev.quiqqer.com/quiqqer/data-layer/wikis/home]]></wiki>
         </support>
 
         <copyright>
