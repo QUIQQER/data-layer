@@ -24,8 +24,9 @@ class EventHandler
         QUI\Template $Template
     ) {
         $Collection->append(
-            '<script src="' . URL_OPT_DIR . 'quiqqer/data-layer/bin/dataLayerEvents<.js"></script>' .
-            '<script src="' . URL_OPT_DIR . 'quiqqer/data-layer/bin/dataLayerEventsEcommerce.js"></script>'
+            '<script src="' . URL_OPT_DIR . 'quiqqer/data-layer/bin/dataLayerEvents.js"></script>' .
+            '<script src="' . URL_OPT_DIR . 'quiqqer/data-layer/bin/trackingEcommerce.js"></script>' .
+            '<script src="' . URL_OPT_DIR . 'quiqqer/data-layer/bin/trackingFrontendUsers.js"></script>'
         );
     }
 }
