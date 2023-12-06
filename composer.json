@@ -1,6 +1,6 @@
 {
   "name": "quiqqer\/data-layer",
-  "type": "quiqqer-library",
+  "type": "quiqqer-plugin",
   "description": "",
   "license": [
     "GPL-3.0+"
