@@ -23,6 +23,23 @@ class DataLayer
         File::mkdir($this->dir);
     }
 
+    /**
+     * @param Project $Project
+     * @param $type
+     * @param $key
+     * @return string
+     */
+    public function getDataLayerValue(Project $Project, $type, $key): string
+    {
+        $file = $this->getProjectFolder($Project, $type) . $key . '.html';
+
+        if (file_exists($file)) {
+            return file_get_contents($file);
+        }
+
+        return '';
+    }
+    
     //region header begin
 
     public function addHeaderBegin(Project $Project, $key, $htmlScript)
@@ -37,7 +54,7 @@ class DataLayer
 
     public function removeHeaderBegin(Project $Project, $key)
     {
-        $file = $this->getProjectFolder($Project, 'headerBegin') . $key;
+        $file = $this->getProjectFolder($Project, 'headerBegin') . $key . '.html';
 
         if (file_exists($file)) {
             unlink($file);
@@ -67,7 +84,7 @@ class DataLayer
 
     public function removeHeaderEnd(Project $Project, $key)
     {
-        $file = $this->getProjectFolder($Project, 'headerEnd') . $key;
+        $file = $this->getProjectFolder($Project, 'headerEnd') . $key . '.html';
 
         if (file_exists($file)) {
             unlink($file);
@@ -97,7 +114,7 @@ class DataLayer
 
     public function removeBodyBegin(Project $Project, $key)
     {
-        $file = $this->getProjectFolder($Project, 'bodyBegin') . $key;
+        $file = $this->getProjectFolder($Project, 'bodyBegin') . $key . '.html';
 
         if (file_exists($file)) {
             unlink($file);
@@ -127,7 +144,7 @@ class DataLayer
 
     public function removeBodyEnd(Project $Project, $key)
     {
-        $file = $this->getProjectFolder($Project, 'bodyEnd') . $key;
+        $file = $this->getProjectFolder($Project, 'bodyEnd') . $key . '.html';
 
         if (file_exists($file)) {
             unlink($file);
@@ -197,7 +214,7 @@ class DataLayer
     protected function setFileContent(Project $Project, $type, $key, $content)
     {
         $dir = $this->getProjectFolder($Project, $type);
-        $file = $dir . $Project->getName() . '/' . $key;
+        $file = $dir . $key . '.html';
 
         file_put_contents($file, $content);
     }
