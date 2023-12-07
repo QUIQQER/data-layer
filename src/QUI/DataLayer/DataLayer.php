@@ -39,7 +39,7 @@ class DataLayer
 
         return '';
     }
-    
+
     //region header begin
 
     public function addHeaderBegin(Project $Project, $key, $htmlScript)
