@@ -11,8 +11,20 @@ Package:
 Features
 --------
 
+- Implementation of window.dataLayer
+- JavaScript onDataLayerPush Event
 
-Installation
+#### E-Commerce-Events
+
+- **Shopping cart interactions**: Changes in the shopping cart, adding or removing products, emptying the shopping cart.
+- **Page type detection:** Detection of whether a user is on a product or product category page.
+- **Order tracking**: Monitoring of the order process, including order completion and order history.
+
+#### Front-end user events
+
+- **Registration**: Recording of user registrations.
+- **Profile management**: Logging of profile changes or deletions.
+
 ------------
 
 The package name is: quiqqer/data-layer
