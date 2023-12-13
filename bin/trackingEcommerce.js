@@ -137,37 +137,40 @@ window.whenQuiLoaded().then(function() {
 
         //region events
 
-        // basket tracking
-        require(['package/quiqqer/order/bin/frontend/Basket'], function(Basket) {
-            Basket.addEvent('onAdd', function(Instance, Product) {
-                getBasketData(Basket).then(function(data) {
+        // basket tracking only if order is installed
+        if (typeof window.QUIQQER_ORDER_ORDER_PROCESS_MERGE !== 'undefined') {
+            require(['package/quiqqer/order/bin/frontend/Basket'], function(Basket) {
+                Basket.addEvent('onAdd', function(Instance, Product) {
+                    getBasketData(Basket).then(function(data) {
+                        window.dataLayer.push({
+                            'event': 'basketAdd',
+                            'currencyCode': data.currencyData.code,
+                            'products': data.products,
+                            'product': Product.getAttributes(),
+                            'sum': data.sum
+                        });
+                    });
+                });
+
+                Basket.addEvent('onRemove', function() {
+                    getBasketData(Basket).then(function(data) {
+                        window.dataLayer.push({
+                            'event': 'basketRemove',
+                            'currencyCode': data.currencyData.code,
+                            'products': data.products,
+                            'sum': data.sum
+                        });
+                    });
+                });
+
+                Basket.addEvent('onClear', function() {
                     window.dataLayer.push({
-                        'event': 'basketAdd',
-                        'currencyCode': data.currencyData.code,
-                        'products': data.products,
-                        'product': Product.getAttributes(),
-                        'sum': data.sum
+                        'event': 'basketClear'
                     });
                 });
             });
+        }
 
-            Basket.addEvent('onRemove', function() {
-                getBasketData(Basket).then(function(data) {
-                    window.dataLayer.push({
-                        'event': 'basketRemove',
-                        'currencyCode': data.currencyData.code,
-                        'products': data.products,
-                        'sum': data.sum
-                    });
-                });
-            });
-
-            Basket.addEvent('onClear', function() {
-                window.dataLayer.push({
-                    'event': 'basketClear'
-                });
-            });
-        });
 
         // category / product tracking
         if (window.QUIQQER_SITE.type === 'quiqqer/products:types/category' && !getProductId()) {
