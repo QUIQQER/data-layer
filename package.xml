@@ -9,7 +9,7 @@
             <locale group="quiqqer/data-layer" var="package.description"/>
         </description>
 
-        <image src="URL_OPT_DIR/quiqqer/html-snippets/bin/images/Logo.png"/>
+        <image src="URL_OPT_DIR/quiqqer/data-layer/bin/Logo.png"/>
 
         <support>
             <email><![CDATA[support@pcsg.de]]></email>
