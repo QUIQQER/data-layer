@@ -18,8 +18,8 @@
     "url": "http:\/\/www.pcsg.de"
   },
   "require": {
-    "php": ">=7.4",
-    "quiqqer\/quiqqer": "^1.9|dev-master|dev-dev"
+    "php": "^8",
+    "quiqqer\/quiqqer": "^1.9|^2"
   },
   "autoload": {
     "psr-4": {
