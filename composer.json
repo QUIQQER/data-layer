@@ -1,5 +1,5 @@
 {
-  "name": "quiqqer\/data-layer",
+  "name": "quiqqer/data-layer",
   "type": "quiqqer-plugin",
   "description": "The QUIQQER Data Layer Module is an extension that adds an data layer to QUIQQER.",
   "license": [
@@ -9,21 +9,21 @@
     {
       "name": "Henning Leutz",
       "email": "leutz@pcsg.de",
-      "homepage": "http:\/\/www.pcsg.de",
+      "homepage": "https://www.pcsg.de",
       "role": "Developer"
     }
   ],
   "support": {
     "email": "support@pcsg.de",
-    "url": "http:\/\/www.pcsg.de"
+    "url": "https://www.pcsg.de"
   },
   "require": {
-    "php": "^8",
-    "quiqqer\/quiqqer": "^1.9|^2"
+    "php": "^8.1",
+    "quiqqer/core": "^2"
   },
   "autoload": {
     "psr-4": {
-      "QUI\\DataLayer\\": "src\/QUI\/DataLayer"
+      "QUI\\DataLayer\\": "src/QUI/DataLayer"
     }
   }
 }
