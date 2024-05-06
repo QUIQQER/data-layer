@@ -3,7 +3,7 @@
 namespace QUI\DataLayer;
 
 use QUI;
-use Quiqqer\Engine\Collector;
+use QUI\Smarty\Collector;
 
 use function file_get_contents;
 
@@ -17,7 +17,7 @@ class EventHandler
     public static function onTemplateBegin(
         Collector $Collection,
         QUI\Template $Template
-    ) {
+    ): void {
         $dataLayerJs = file_get_contents(OPT_DIR . 'quiqqer/data-layer/bin/dataLayer.js');
 
         $Collection->append(
@@ -28,7 +28,7 @@ class EventHandler
     public static function onTemplateEnd(
         Collector $Collection,
         QUI\Template $Template
-    ) {
+    ): void {
         $Collection->append(
             '<script src="' . URL_OPT_DIR . 'quiqqer/data-layer/bin/dataLayerTrack.js"></script>'
         );
