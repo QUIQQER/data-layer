@@ -9,6 +9,16 @@
             <locale group="quiqqer/data-layer" var="package.description"/>
         </description>
 
+        <capabilities schemaVersion="1">
+            <capability id="analytics.data-layer">
+                <title>Analytics data layer</title>
+                <description>
+                    Provides a browser data layer and tracking API with standard page-view and authentication lifecycle
+                    events for analytics integrations.
+                </description>
+            </capability>
+        </capabilities>
+
         <image src="URL_OPT_DIR/quiqqer/data-layer/bin/Logo.png"/>
 
         <support>
