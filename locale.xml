@@ -5,6 +5,11 @@
         <locale name="package.title">
             <de><![CDATA[QUIQQER Data Layer]]></de>
             <en><![CDATA[QUIQQER Data Layer]]></en>
+            <es><![CDATA[QUIQQER Data Layer]]></es>
+            <pt><![CDATA[QUIQQER Data Layer]]></pt>
+            <fr><![CDATA[QUIQQER Data Layer]]></fr>
+            <it><![CDATA[QUIQQER Data Layer]]></it>
+            <pl><![CDATA[QUIQQER Data Layer]]></pl>
         </locale>
         <locale name="package.description">
             <de><![CDATA[
@@ -13,10 +18,15 @@
             führenden Plattformen wie Facebook, Google, LinkedIn, Matomo und anderen.
             ]]></de>
             <en><![CDATA[
-            The QUIQQER Data Layer Module is an extension that adds an data layer to QUIQQER.
+            The QUIQQER Data Layer Module is an extension that adds a data layer to QUIQQER.
             This module forms the basis for an effortless and efficient integration of data layer features from
             leading platforms such as Facebook, Google, LinkedIn, Matomo and others.
             ]]></en>
+            <es><![CDATA[El módulo QUIQQER Data Layer añade una capa de datos a QUIQQER. Sirve de base para integrar de forma sencilla y eficiente las funciones de capa de datos de plataformas como Facebook, Google, LinkedIn y Matomo, entre otras.]]></es>
+            <pt><![CDATA[O módulo QUIQQER Data Layer acrescenta uma camada de dados ao QUIQQER. Serve de base para integrar de forma simples e eficiente as funcionalidades de camada de dados de plataformas como Facebook, Google, LinkedIn e Matomo, entre outras.]]></pt>
+            <fr><![CDATA[Le module QUIQQER Data Layer ajoute une couche de données à QUIQQER. Il sert de base pour intégrer simplement et efficacement les fonctionnalités de couche de données de plateformes comme Facebook, Google, LinkedIn et Matomo, entre autres.]]></fr>
+            <it><![CDATA[Il modulo QUIQQER Data Layer aggiunge un livello dati a QUIQQER. Funge da base per integrare in modo semplice ed efficiente le funzionalità del livello dati di piattaforme come Facebook, Google, LinkedIn e Matomo, tra le altre.]]></it>
+            <pl><![CDATA[Moduł QUIQQER Data Layer dodaje warstwę danych do QUIQQER. Stanowi podstawę prostej i wydajnej integracji funkcji warstwy danych platform takich jak Facebook, Google, LinkedIn, Matomo i innych.]]></pl>
         </locale>
     </groups>
 
