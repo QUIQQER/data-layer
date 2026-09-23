@@ -1,6 +1,6 @@
 {
     "name": "quiqqer/data-layer",
-    "type": "quiqqer-plugin",
+    "type": "quiqqer-module",
     "description": "The QUIQQER Data Layer Module is an extension that adds an data layer to QUIQQER.",
     "license": [
         "GPL-3.0+"
